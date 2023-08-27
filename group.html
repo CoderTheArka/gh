@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IDEAL DASHBOARD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='nav.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='group.css'>
+    <script src='group.js'></script>
+</head>
+<body>
+     <label>
+    <input type="checkbox" id="input">   
+    <div class="toggle">
+        <span class="top_line common"></span>
+        <span class="middle_line common"></span>
+        <span class="bottom_line common"></span>
+
+    </div>
+        <div class="slide">
+            <h1 id="h1">MENU</h1>
+            
+            <ul>
+            
+                <li><a onclick="localStorage.setItem('succes' , 'ok');localStorage.setItem('where' , 'myprofile');" href="loading.html"><i class="fas fa-user"></i>YOUR PROFILE</a></li>
+                <li><a onclick="localStorage.setItem('succes' , 'ok');localStorage.setItem('where' , 'student');" href="loading.html"><i class="fas fa-user-circle"></i>ADD STUDENT</a></li>
+                <li><a onclick="localStorage.setItem('succes' , 'ok');localStorage.setItem('where' , 'homework');" href="loading.html"><i class="fas fa-phone"></i>HOMEWORK</a></li>
+                <li><a onclick="localStorage.setItem('succes' , 'ok');localStorage.setItem('where' , 'homeworkcheck');" href="loading.html"><i class="fas fas fa-user-check"></i>HW CHECK UP</a></li>
+                <li><a onclick="localStorage.setItem('succes' , 'ok');localStorage.setItem('where' , 'studentinfo');" href="loading.html"><i class="fas fa-book"></i>STUDENT INFO</a></li>
+                <li><a onclick="localStorage.setItem('succes' , 'ok');localStorage.setItem('where' , 'chat');" href="loading.html"><i class="fas fa-comments"></i>CHAT</a></li>
+                <li><a onclick="localStorage.removeItem('succes')" href="index.html"><i class="fas  fa-fire"></i>LEAVE</a></li>
+            </ul>
+        </div>
+    </label>
+    
+    <!------ Include the above in your HEAD tag ---------->
+    <div class="container">
+		<div class="chat_box">
+			<div class="head">
+				<div class="user">
+					<div class="avatar">
+						<img style="width: 40px; height: 40px;" src="http://atarnotes.com/wordpress/wp-content/uploads/2016/03/library-study-e1458186167372.jpg" />
+					</div>
+					<div id="chatspp" class="name">IDEAL ENGLISH MEDIUM</div>
+				</div>
+			</div>
+			<div id="body" class="body">
+			</div>
+			<div class="foot">
+				<input id="message" type="text" class="msg" placeholder="Type a message..." />
+				<button onclick="send()"  type="submit"><i class="fas fa-paper-plane"></i></button>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

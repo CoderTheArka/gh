@@ -1,0 +1,37 @@
+body{
+    
+    overflow-y: hidden;
+
+}
+.container{
+    top:5;
+    max-width: 480px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px , 5px , 15px rgba(0, 0, 0, 0.2);
+    background-color: blue;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    word-spacing: 2px;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.align_homework{
+    overflow-x: auto;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px  5px  15px black;
+}
+.complete{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    letter-spacing: 5px;
+
+}
+.name{
+    background-color: black;
+
+}
